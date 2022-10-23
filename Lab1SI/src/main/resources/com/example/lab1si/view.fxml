@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="470.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1si.Controller">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Load" text="Загрузить" />
+      <TextArea fx:id="sourceTextArea" layoutX="14.0" layoutY="76.0" prefHeight="367.0" prefWidth="160.0" wrapText="true" />
+      <TextArea fx:id="encryptDoubleDESTextArea" layoutX="214.0" layoutY="93.0" prefHeight="90.0" prefWidth="200.0" wrapText="true" />
+      <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Исходный текст" wrappingWidth="200.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="193.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Зашифрованный текст" wrappingWidth="200.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="480.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Расшифрованный текст">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="99.0" layoutY="14.0" mnemonicParsing="false" onAction="#EncryptDecrypt" text="Шифровать/дешифровать" />
+      <TextArea fx:id="encryptTripleDESTextArea" layoutX="214.0" layoutY="223.0" prefHeight="90.0" prefWidth="200.0" wrapText="true" />
+      <TextArea fx:id="decryptDoubleDESTextArea" layoutX="479.0" layoutY="93.0" prefHeight="90.0" prefWidth="195.0" wrapText="true" />
+      <TextArea fx:id="decryptTripleDESTextArea" layoutX="479.0" layoutY="223.0" prefHeight="90.0" prefWidth="195.0" wrapText="true" />
+      <TextArea fx:id="encryptGOSTTextArea" layoutX="214.0" layoutY="354.0" prefHeight="90.0" prefWidth="200.0" wrapText="true" />
+      <TextArea fx:id="decryptGOSTTextArea" layoutX="477.0" layoutY="354.0" prefHeight="90.0" prefWidth="200.0" wrapText="true" />
+      <Text layoutX="213.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Двойной DES" />
+      <Text layoutX="213.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тройной DES" />
+      <Text layoutX="218.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ГОСТ 28147-89" />
+   </children>
+</AnchorPane>

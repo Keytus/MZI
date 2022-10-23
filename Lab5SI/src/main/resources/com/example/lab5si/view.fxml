@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="267.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab5si.Controller">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Load" text="Загрузить" />
+        <TextArea fx:id="sourceTextArea" layoutX="14.0" layoutY="76.0" prefHeight="152.0" prefWidth="324.0" wrapText="true" />
+        <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Исходный текст" wrappingWidth="200.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="353.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Хеш" wrappingWidth="37.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="480.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button layoutX="99.0" layoutY="14.0" mnemonicParsing="false" onAction="#Hash" text="Хешировать" />
+        <TextArea fx:id="hashTextArea" layoutX="353.0" layoutY="76.0" prefHeight="152.0" prefWidth="324.0" wrapText="true" />
+        <Text layoutX="640.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD5" wrappingWidth="37.0">
+            <font>
+                <Font size="16.0" />
+            </font></Text>
+    </children>
+</AnchorPane>

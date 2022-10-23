@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="470.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4si.Controller">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Load" text="Загрузить" />
+        <TextArea fx:id="sourceTextArea" layoutX="14.0" layoutY="76.0" prefHeight="367.0" prefWidth="160.0" wrapText="true" />
+        <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Исходный текст" wrappingWidth="200.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="232.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Зашифрованный текст" wrappingWidth="200.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="480.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Расшифрованный текст">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button layoutX="99.0" layoutY="14.0" mnemonicParsing="false" onAction="#EncryptDecrypt" text="Шифровать/дешифровать" />
+        <TextArea fx:id="encryptElGamalTextArea" layoutX="232.0" layoutY="77.0" prefHeight="367.0" prefWidth="200.0" wrapText="true" />
+        <TextArea fx:id="decryptElGamalTextArea" layoutX="477.0" layoutY="76.0" prefHeight="367.0" prefWidth="200.0" wrapText="true" />
+        <Text layoutX="613.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ElGamal" wrappingWidth="62.0">
+            <font>
+                <Font size="16.0" />
+            </font></Text>
+    </children>
+</AnchorPane>
