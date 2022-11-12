@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="470.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab7si.Controller">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Load" text="Загрузить" />
+        <TextArea fx:id="sourceTextArea" layoutX="14.0" layoutY="76.0" prefHeight="367.0" prefWidth="160.0" wrapText="true" />
+        <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Исходный текст" wrappingWidth="200.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="232.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подпись" wrappingWidth="200.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="480.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Проверка подлинности">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button layoutX="99.0" layoutY="14.0" mnemonicParsing="false" onAction="#EncryptDecrypt" text="Подпись/проверить" />
+        <TextArea fx:id="signedTextArea" layoutX="232.0" layoutY="77.0" prefHeight="367.0" prefWidth="200.0" wrapText="true" />
+        <TextArea fx:id="checkTextArea" layoutX="477.0" layoutY="76.0" prefHeight="0.0" prefWidth="200.0" wrapText="true" />
+        <Text layoutX="619.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECDSA" wrappingWidth="56.0">
+            <font>
+                <Font size="16.0" />
+            </font></Text>
+    </children>
+</AnchorPane>
